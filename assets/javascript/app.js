@@ -9,19 +9,6 @@ for(var i = 0; i <= keywords.length; i++)
 
 var seatgeekURLbyPerformer = "https://api.seatgeek.com/2/performers?q="+performer+"&client_id=MTg0MDYxODh"
 
-var zip = 38401;
-//eventbrite call
-var settings = 
-{
-	"async": true,
-	"crossDomain": true,
-	"url": "http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=https://samples.openweathermap.org/data/2.5/weather?zip="+zip+",us&appid=5ea5e37dfb4cfb42bf600406ca2185cc",
-	"method": "GET"
-}
-​
-$.ajax(settings).done(function (response) {
-	console.log(response);
-});
 
   //meetup call 
   var settings = {
@@ -38,3 +25,21 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (seatgeekResponse) {
 	console.log(seatgeekResponse);
 });
+
+
+var zip = seatgeekResponse.postal_code;
+
+//eventbrite call
+var settings = 
+{
+	"async": true,
+	"crossDomain": true,
+	"url": "http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=https://samples.openweathermap.org/data/2.5/weather?zip="+zip+",us&appid=5ea5e37dfb4cfb42bf600406ca2185cc",
+	"method": "GET"
+}
+​
+$.ajax(settings).done(function (response) {
+	console.log(response);
+});
+
+
