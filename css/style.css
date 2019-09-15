@@ -1,6 +1,10 @@
 body {
-    background-image: url(images/dot-grid.png);
+    background-image: url("../images/dot-grid.png");
     color: #e0e0e0;
+}
+
+.title {
+    font-family: 'Baloo Tammudu', cursive;
 }
 
 .container {
