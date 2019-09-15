@@ -7,6 +7,10 @@ body {
     font-family: 'Baloo Tammudu', cursive;
 }
 
+.field {
+    margin-left: 1%;
+}
+
 .container {
     margin-top: 1%;
     margin-bottom: 1%;
