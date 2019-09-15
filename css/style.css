@@ -1,6 +1,6 @@
 body {
     background-image: url("../images/dot-grid.png");
-    color: #e0e0e0;
+    color: hsl(0, 0%, 98%);
 }
 
 .title {
