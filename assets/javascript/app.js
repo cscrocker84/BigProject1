@@ -14,16 +14,16 @@ var seatgeekURLbyPerformer = "https://api.seatgeek.com/2/performers?q="+performe
   var settings = {
 	"async": true,
 	"crossDomain": true,
-	"url": "https://seatgeek-seatgeekcom.p.rapidapi.com/events",
+	"url": "https://seatgeek-seatgeekcom.p.rapidapi.com/performers",
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "seatgeek-seatgeekcom.p.rapidapi.com",
-		"x-rapidapi-key": "6d85d63f9bmsh0562612230be246p1a4165jsn885de49510b4"
+		"x-rapidapi-key": "d80dc8d8e3msh8a2255600c701e6p1916f8jsn46bcf06e5193"
 	}
 }
 
-$.ajax(settings).done(function (seatgeekResponse) {
-	console.log(seatgeekResponse);
+$.ajax(settings).done(function (response) {
+	console.log(response);
 });
 
 
