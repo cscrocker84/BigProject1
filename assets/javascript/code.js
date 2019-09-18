@@ -9,7 +9,7 @@ for(var i = 0; i <= keywords.length; i++)
 var seatgeekURLbyPerformer = "https://api.seatgeek.com/2/performers?q="+performer+"&client_id=MTg0MDYxODh"
 
 
-  //seatgeek call 
+  //meetup call 
   var settings = {
 	"async": true,
 	"crossDomain": true,
@@ -28,7 +28,7 @@ $.ajax(settings).done(function (seatgeekResponse) {
 
 var zip = seatgeekResponse.postal_code;
 
-//weather call
+//eventbrite call
 var settings = 
 {
 	"async": true,
@@ -42,4 +42,3 @@ $.ajax(settings).done(function (response) {
 });
 
 searchParam = $("#searchBar").val().trim();
-
