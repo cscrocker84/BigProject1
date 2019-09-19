@@ -29,6 +29,7 @@ $(document).ready(function(){
 				 }
 	}
 
+
 	$.ajax(tmSettings).done(function(ticketmasterResponse){
 		console.log(ticketmasterResponse);
 	});
