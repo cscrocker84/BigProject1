@@ -1,0 +1,28 @@
+body {
+    background-image: url("../images/dot-grid.png");
+    color: hsl(0, 0%, 98%);
+}
+
+.title {
+    font-family: 'Baloo Tammudu';
+}
+
+.field {
+    margin-left: 1%;
+}
+
+.container {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.navbar {
+    padding-top: 1%;
+    padding-left: 1%;
+    font-family: 'Baloo Tammudu';
+    margin-bottom: 3%;
+}
+
+.footer {
+    margin-top: 5%;
+}
