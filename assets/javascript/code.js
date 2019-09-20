@@ -65,4 +65,3 @@ $(document).keypress(function(e)
         console.log("Temperature (F): " + weatherRes.main.temp);
       });
 
-
